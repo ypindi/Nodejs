@@ -1,0 +1,39 @@
+Highly scalable, data-intensive, and real-time applications.
+
+Used for running JS on non-browser applications.
+
+Mainly to build back-end services (APIs).
+
+Node compared to Spring in Paypal:
+built twice as fast with fewer people
+33% less lines of code
+40% fewer files,
+2x requests / sec,
+35% faster response time
+
+Has the largest ecosystem of open-source libraries.
+
+Spidermonkey, Chakra, and V8 are JS engines that
+run on our browsers to run JS code.
+
+2009 by Ryan Dahl:
+V8 + some C++ code = Node.exe .
+So now, node.exe is also a runtime env for JS. It also has objects
+(that are different from objects from web browser) like file system,
+listening for requests on a port, network.
+
+Chrome and Node have same JS engine but different runtime envs for JS.
+
+Node is:
+
+1. Highly scalable because it has an NON-BLOCKING / ASYNCHRONOUS architecture:
+   When a request comes to the server, a thread is assigned to handle that request.
+   same thread can be used for multiple requests. The thread does not wait while
+   request is being executed for the database to return the data. While the database
+   is executing our query, it caters to other requests. Once the database result is
+   ready, it puts the message in an EVENT QUEUE, to let the thread know its ready.
+   This is why it is ideal for I/O or network access or disk intensive apps. Can serve
+   more clients without putting in more hardware.
+2. Don't use Node for CPU intensive apps like Video editing / image generation: Because
+   CPU has to lot of calculations rather than queries/operations that touch file system.
+   That's why best for data intensive and real time apps.

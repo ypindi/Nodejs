@@ -1,0 +1,32 @@
+Node never executes our code directly.
+It always wraps our module inside of a function.
+
+If you create an error in the 1st line of 3_creatingModule.js
+file, when you try to call the logger function in
+creatingModules_3.js file, you will get an error.
+
+Because it is an IIFE concept.
+There is a module wrapper function and this module wrapper
+function has many arguments. One of the argument is the
+require function. Hence, require is local to each module.
+
+Important Concepts:
+NPM
+Asynchronoous JS: async and await.
+CRUS operations
+Data validation
+Authentication and Authorization using JSON web tokens including Role Management.
+Handling and Logging Errors.
+Unit and Integration Testing.
+TDD
+Deployment to Cloud.
+
+Clean coding and refactoring
+Security Best Practices
+Useful libraries.
+
+Learn the 15 MOST IMPORTANT Modules:
+WHAT THEY DO
+HOW TO USE (JUST SYNTAX)
+Advantages
+DO THIS FOR OTHER STUFF TOO (like DJANGO, FLASK).
